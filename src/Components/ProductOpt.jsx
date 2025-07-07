@@ -19,11 +19,8 @@ const ProductOpt = ({ setHideOnScroll, products }) => {
   return (
     <div className="flex md:gap-x-[40px] w-full h-200px  items-center justify-center pt-[100px]">
       <div className="flex md:gap-x-[40px] scrollbar-hide md:justify-center overflow-x-auto w-full">
-        {products.map((product) => (
-          <div className="flex">
-            <div>
-              <h1>{product.Head}</h1>
-            </div>
+        {products.map((product, index) => (
+          <div key={index} className="flex">
             <div
               key={product.id}
               className="min-w-[130px] flex-shrink-0 text-center"

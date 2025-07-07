@@ -11,6 +11,8 @@ import BannerProducts from "./BannerProducts";
 import Service from "./Service";
 import WaterSub from "./WaterSub";
 import VaccumSub from "./VaccumSub";
+import LastPick from "./LastPick";
+import FooterOptr from "./FooterOptr";
 
 const Home = () => {
   return (
@@ -25,6 +27,8 @@ const Home = () => {
       <Service />
       <WaterSub />
       <VaccumSub />
+      <LastPick />
+      <FooterOptr/>
     </>
   );
 };

@@ -6,7 +6,7 @@ import { FiMenu } from "react-icons/fi"; // Hamburger menu icon
 import { IoClose } from "react-icons/io5"; // Close icon for the menu
 import { Link } from "react-router-dom";
 
-const Navbar = ({ hideOnScroll }) => {
+const Navbar = ({ hideOnScroll, currentpath }) => {
   // State to toggle the mobile menu (dashboard)
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -27,7 +27,7 @@ const Navbar = ({ hideOnScroll }) => {
 
         <div className=" hidden md:flex mr-[200px]">
           <div className="">
-            {hideOnScroll && (
+            {(hideOnScroll || currentpath !== "/") && (
               <ul className="md:flex gap-x-6 mr-[50px] text-[18px] sm:hidden">
                 <Link to={"/waterpurifiers"}>
                   <li>Water Purifier</li>

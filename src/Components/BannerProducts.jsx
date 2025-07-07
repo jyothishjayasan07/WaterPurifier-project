@@ -60,7 +60,7 @@ const BannerProducts = () => {
       des: "Deep cleaning made easy",
       name: "Forbes Smartclean Nuo Robotic Vacuum",
       price: "Get it as low as ₹18,949*",
-      Emi: "10% instant bank discount + 5% coupon",
+      Emi: "10% instant bank discount + 5% coupon ",
       Spanclr: "text-[#FFE793]",
       textclr: "text-black",
       Emiclr: "text-[#CFCFCF]",
@@ -111,7 +111,7 @@ const BannerProducts = () => {
                 <h1 className="text-[20px] sm:text-[24px] md:text-[30px] font-extrabold">
                   {data.name}
                 </h1>
-                <h1 className="text-[16px] sm:text-[18px] md:text-[20px]">
+                <h1 className="text-[16px]  sm:text-[18px] md:text-[20px] ">
                   {data.price}
                 </h1>
                 <p className={`text-[14px] sm:text-[16px] ${data.EmiClr}`}>

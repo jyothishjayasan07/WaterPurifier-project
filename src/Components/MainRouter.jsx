@@ -37,7 +37,7 @@ const MainRouter = () => {
 
   return (
     <div>
-      <Navbar hideOnScroll={hideOnScroll} />
+      <Navbar hideOnScroll={hideOnScroll} currentpath={location.pathname} />
       <ProductOpt setHideOnScroll={setHideOnScroll} products={productsToShow} />
       <Routes>
         <Route path="/login" element={<LoginPage />} />
